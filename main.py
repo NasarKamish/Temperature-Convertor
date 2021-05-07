@@ -87,10 +87,12 @@ def clear():
 
 # code start
 
-CtF = LabelFrame(converter, text="Celsius To Fahrenheit")
+CtF = LabelFrame(converter, text="Celsius To Fahrenheit", borderwidth=10, font=("Times", 10))
+CtF["bg"] = "White"
 CtF.place(x=100, y=100, height=100, width=300)
 
-FtC = LabelFrame(converter, text="Fahrenheit To Celsius")
+FtC = LabelFrame(converter, text="Fahrenheit To Celsius", borderwidth=10, font=("Times", 10))
+FtC["bg"] = "White"
 FtC.place(x=500, y=100, height=100, width=300)
 
 en_CtF = Entry(CtF)
