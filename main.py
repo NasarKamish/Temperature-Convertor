@@ -110,7 +110,7 @@ btn_CtF.place(x=100, y=250, width=300, height=50)
 
 btn_FtC = Button(converter, text="Activate - Fahrenheit To Celsius", borderwidth=10, font=("Times", 10))
 btn_FtC["bg"] = "White"
-btn_FtC["command"] = enable_ctf
+btn_FtC["command"] = enable_ftc
 btn_FtC.place(x=500, y=250, width=300, height=50)
 
 btn_Cal = Button(converter, text="Calculate Conversion", borderwidth=10, font=("Times", 10))
@@ -125,12 +125,12 @@ en_Answer.config(state="readonly")
 btn_Clear = Button(converter, text="Clear", borderwidth=10, font=("Times", 10))
 btn_Clear["bg"] = "White"
 btn_Clear["command"] = clear
-btn_Clear.place(x=700, y=350, width=100)
+btn_Clear.place(x=650, y=350, width=150)
 
 btn_Exit = Button(converter, text="Exit Program", borderwidth=10, font=("Times", 10))
 btn_Exit["bg"] = "White"
 btn_Exit["command"] = exit
-btn_Exit.place(x=700, y=400, width=100)
+btn_Exit.place(x=650, y=400, width=150)
 
 # code end
 converter.mainloop()
